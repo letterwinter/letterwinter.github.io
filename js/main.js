@@ -15,7 +15,7 @@ jQuery(document).ready(function($){
 		//check if image was previously load - if yes, trigger load event
   		if(this.complete) $(this).load();
 	});
-	
+
 	//detect mouse movement
 	$('.cd-background-wrapper').each(function(){
 		$(this).on('mousemove', function(event){
@@ -32,8 +32,8 @@ jQuery(document).ready(function($){
 	$(window).on('resize', function(){
 		if( $('html').hasClass('preserve-3d') ) {
 			window.requestAnimationFrame(function(){
-				halfWindowH = $(window).height()*0.5,
-				halfWindowW = $(window).width()*0.5;
+				halfWindowH = $(window).height()*0.7,
+				halfWindowW = $(window).width()*0.7;
 				initBackground();
 			});
 		} else {
@@ -43,7 +43,7 @@ jQuery(document).ready(function($){
 	});
 
 	function initBackground() {
-		var wrapperHeight = Math.ceil(halfWindowW*2/aspectRatio), 
+		var wrapperHeight = Math.ceil(halfWindowW*2/aspectRatio),
 			proportions = ( maxRotationY > maxRotationX ) ? 1.1/(Math.sin(Math.PI / 2 - maxRotationY*Math.PI/180)) : 1.1/(Math.sin(Math.PI / 2 - maxRotationX*Math.PI/180)),
 			newImageWidth = Math.ceil(halfWindowW*2*proportions),
 			newImageHeight = Math.ceil(newImageWidth/aspectRatio),
@@ -54,7 +54,7 @@ jQuery(document).ready(function($){
 		$('.cd-background-wrapper').css({
 			'height' : wrapperHeight,
 		});
-		//set dimentions and position of the .cd-background-wrapper		
+		//set dimentions and position of the .cd-background-wrapper
 		$('.cd-floating-background').addClass('is-absolute').css({
 			'left' : newLeft,
 			'top' : newTop,

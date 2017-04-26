@@ -1,24 +1,90 @@
-<!doctype html>
-<html lang="en" class="no-js">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!DOCTYPE html>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
-	<link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
-	<script src="js/modernizr.js"></script> <!-- Modernizr -->
-  	
-	<title>Parallax Hero Image | CodyHouse</title>
+  <title>lewi | Graphic Design, Branding Design</title>
+  <meta name="description" content="Nguyen Anh Thu - Freelance Graphic Designer with a passion for clean, intuitive website &amp; graphic design.">
+  <meta name="author" content="Thomas Nguyen - https://latiosthinh.github.io">
+  <meta name="theme-color" content="#000000">
+
+  <meta property="og:title" content="Nguyen Anh Thu - Freelance Graphic Designer">
+  <meta property="og:description" content="Nguyen Anh Thu - Freelance Graphic Designer with a passion for clean, intuitive website &amp; graphic design.">
+
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://use.fontawesome.com/c4c0d551c4.js"></script>
 </head>
 <body>
-	<div class="cd-background-wrapper">
-		<figure class="cd-floating-background">
-			<img src="img/cd-img-1.jpg" alt="image-1">
-			<img src="img/cd-img-2.png" alt="image-2">
-			<img src="img/cd-img-3.png" alt="image-3">
-		</figure>
-	</div>
-<script src="js/jquery-2.1.1.js"></script>
-<script src="js/main.js"></script> <!-- Resource jQuery -->
+  <div class="container">
+    <div class="left">
+      <div class="content">
+      <h1>Hi, I'm Lewi <span class="doodle heart">o</span></h1>
+      <p>i'm a graphic designer with perseverance, strong passion and creative. i currently work for
+        <a class="sanstwo wine link-hover" href="http://wineagency.vn">Wine Agency</a> and also as a freelancer. i love drawing and love all the little
+      cute things. <br><br>
+      feel free to find me on <a class="sanstwo fb link-hover" href="https://www.facebook.com/letterwinter">facebook</a>,
+       <a class="sanstwo insta link-hover" href="https://www.instagram.com/letterwinter/">instagram</a>, <a class="sanstwo behance link-hover" href="https://www.behance.net/anhthu1411">behance</a>. </p><br>
+
+      <a class="mailto" href="mailto:nguyenanhthu.1411@gmail.com">Let's team up  <i class="fa fa-envelope-o" aria-hidden="true"></i></a>
+      <h2 class="blue">Together we create beauty</h2>
+    </div>
+    </div>
+
+    <div class="right">
+      <div id="one" class="move" data-range="40,70">
+        <img src="img/one.svg" alt="">
+      </div>
+      <div id="two" class="move" data-range="70,60">
+        <img src="img/two.svg" alt="">
+      </div>
+      <div id="three" class="move" data-range="60,70">
+        <img src="img/three.svg" alt="">
+      </div>
+      <div id="four" class="move" data-range="60,70">
+        <img src="img/four.svg" alt="">
+      </div>
+      <div id="five" class="move" data-range="60,90">
+        <img src="img/five.svg" alt="">
+      </div>
+      <div id="six" class="move" data-range="50,70">
+        <img src="img/six.svg" alt="">
+      </div>
+      <div id="seven" class="move" data-range="70,40">
+        <img src="img/seven.svg" alt="">
+      </div>
+      <div id="eight" class="move" data-range="90,60">
+        <img src="img/eight.svg" alt="">
+      </div>
+      <div id="nine" class="move" data-range="70,50">
+        <img src="img/nine.svg" alt="">
+      </div>
+      <div id="ten" class="move" data-range="40,90">
+        <img src="img/ten.svg" alt="">
+      </div>
+    </div>
+  </div>
+
+<script type="text/javascript">
+  $(window).mousemove(function(e) {
+    //getting mouse dimentions
+    var pageX = e.pageX * 0.01;
+    var pageY = e.pageY * 0.01;
+
+    //console.log(pageX);
+    $('.move').each(function( index ) {
+      var range = $(this).attr('data-range').split(',');
+      var min = parseFloat(range[0]);
+      var max = parseFloat(range[1]);
+      var x = min + (pageX * (max - min));
+      var y = min + (pageY * (max - min));;
+      var z = 0;
+      //setting accelerated webkit transform
+      $(this).css("-webkit-transform", "translate3d("+x+"%,"+y+"%,"+z+"px"+")");
+    });
+  });
+</script>
+
 </body>
 </html>

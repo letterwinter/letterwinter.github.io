@@ -1,83 +1,65 @@
-/* -------------------------------- 
+@font-face { font-family: 'Doodles'; font-style: normal; font-weight: 700; src: url('../font/SummerLemonade-Doodles.woff') format('woff'); }
+@font-face { font-family: 'SansOne'; font-style: normal; font-weight: 700; src: url('../font/SummerLemonade-SansOne.woff') format('woff'); }
+@font-face { font-family: 'SansTwo'; font-style: bold; font-weight: 700; src: url('../font/SummerLemonade-SansTwo.woff') format('woff'); }
+@font-face { font-family: 'Script'; font-style: bolder; font-weight: 700; src: url('../font/SummerLemonade-Script.woff') format('woff'); }
 
-Primary style
-
--------------------------------- */
-*, *::after, *::before {
-  box-sizing: border-box;
-}
-
-html {
-  font-size: 62.5%;
-}
-
-body {
-  font-size: 1.6rem;
-  font-family: sans-serif;
-  color: #ffffff;
-  background: #001426 url("../img/bg-pattern.png");
-}
-
-a {
-  color: #196a74;
-  text-decoration: none;
-}
-
-/* -------------------------------- 
-
-Main Components 
-
--------------------------------- */
-.cd-background-wrapper {
-  background-color: #001426;
-  position: relative;
-  overflow: hidden;
-  -webkit-perspective: 4000px;
-  perspective: 4000px;
-}
-
-.cd-floating-background {
-  position: relative;
-  top: 0;
-  left: 0;
+* { margin:0; padding:0; }
+body { background:#000; color: #fff;font-family:'SansOne';font-size: 100%; }
+.left { width:50%;height: 100%;background:transparent;position:absolute;top:0;left:0;z-index: 1000;}
+.content { margin: 100px; }
+.right { width:70%;height: 100%;position:fixed;top:0;left:30%; }
+.move {
+  height: 30px;
+  width: 30px;
+  background: transparent;
+  position: absolute;
+  transform: translate3d(0, 0, 0);
+  -webkit-transform: translate3d(0, 0, 0);
+          transform-style: preserve-3d;
   -webkit-transform-style: preserve-3d;
-  transform-style: preserve-3d;
-  -webkit-transform: translateZ(0);
-  -ms-transform: translateZ(0);
-  transform: translateZ(0);
-}
-.cd-floating-background.is-absolute {
-  position: absolute;
-}
-.cd-floating-background img {
-  display: block;
-  width: 100%;
+          backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  /* fixes a Firefox bug - images not correctly rendered*/
-  background-color: rgba(255, 255, 255, 0.01);
+  border: none;
 }
-.cd-floating-background img:not(:first-child) {
-  position: absolute;
-  top: 0;
-  left: 0;
+#one { top: 1%; left: 1%; }
+#two { top: 10%; left: 25%; }
+#three { top: 40%; left: 15%; }
+#four { top: 5%; left: 50%; }
+#five { top: 30%; left: 37%; }
+#six { top: 45%; left: 72%; }
+#seven { top: 65%; left: 35%; }
+#eight { top: 27%; left: 80%; }
+#nine { top: 85%; left: 7%; }
+#ten { top: 75%; left: 54%; }
+.doodle { font-family: 'Doodles'; }
+.sanstwo { font-family: 'SansTwo'; }
+.heart { color: red; }
+a, a:hover { text-decoration: none;}
+a.mailto { color: #fff;letter-spacing: .2rem;position: absolute;bottom: 6rem;font-size: 1.3rem; }
+h1 { font-family: 'SansTwo';font-size: 3rem; }
+h2 { font-family: 'SansTwo';font-size: 1.5rem;position: absolute;bottom: 3rem; }
+p { letter-spacing: .15rem;font-size: 1.1rem;line-height: 1.5rem;margin-top: 5rem;color: rgba(255,255,255,.5); }
+.blue { color: cyan; }
+.behance { color: #0096ff; } .behance:hover { border-bottom: 2px solid #0096ff;color: #fff; }
+.insta { color: #de00c8; } .insta:hover { border-bottom: 2px solid #de00c8;color: #fff; }
+.fb { color: #365899; } .fb:hover { border-bottom: 2px solid #365899;color: #fff; }
+.wine { color:#e95182; } .wine:hover { border-bottom: 2px solid #e95182;color: #fff; }
+.link-hover { border-bottom: 2px solid #fff;transition: all linear .5s; }
+.fa { transition: leftToRight 1s ease infinitive; }
+
+@media (min-width: 1600px) {
+  h1 { font-size: 4rem;margin-top: 14rem;}
+  p { font-size: 2rem;line-height: 2.5rem; }
 }
-.cd-floating-background img:first-child {
-  -webkit-transform: translateZ(50px);
-  -ms-transform: translateZ(50px);
-  transform: translateZ(50px);
+
+/********** CUSTOM ANIMATION ***********/
+@-webkit-keyframes leftToRight {
+	0 { margin-left:0; }
+	50 { margin-left:2rem; }
+  100 { margin-left:0; }
 }
-.cd-floating-background img:nth-child(2) {
-  -webkit-transform: translateZ(290px);
-  -ms-transform: translateZ(290px);
-  transform: translateZ(290px);
-}
-.cd-floating-background img:nth-child(3) {
-  -webkit-transform: translateZ(400px);
-  -ms-transform: translateZ(400px);
-  transform: translateZ(400px);
-}
-.no-preserve-3d .cd-floating-background {
-  /* we target browsers that don't support preserve-3d and show just a standard image - no effect visible */
-  position: relative;
+@keyframes leftToRight {
+  0 { margin-left:0; }
+	50 { margin-left:2rem; }
+  100 { margin-left:0; }
 }
