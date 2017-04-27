@@ -1,7 +1,7 @@
-@font-face { font-family: 'Doodles'; font-style: normal; font-weight: 700; src: url('../font/SummerLemonade-Doodles.woff') format('woff'); }
-@font-face { font-family: 'SansOne'; font-style: normal; font-weight: 700; src: url('../font/SummerLemonade-SansOne.woff') format('woff'); }
-@font-face { font-family: 'SansTwo'; font-style: normal; font-weight: 700; src: url('../font/SummerLemonade-SansTwo.woff') format('woff'); }
-@font-face { font-family: 'Script'; font-style: normal; font-weight: 700; src: url('../font/SummerLemonade-Script.woff') format('woff'); }
+@font-face { font-family: 'Doodles'; font-style: normal; font-weight: 700; src: url('../letterwinter.github.io/font/SummerLemonade-Doodles.woff') format('woff'); }
+@font-face { font-family: 'SansOne'; font-style: normal; font-weight: 700; src: url('../letterwinter.github.io/font/SummerLemonade-SansOne.woff') format('woff'); }
+@font-face { font-family: 'SansTwo'; font-style: normal; font-weight: 700; src: url('../letterwinter.github.io/font/SummerLemonade-SansTwo.woff') format('woff'); }
+@font-face { font-family: 'Script'; font-style: normal; font-weight: 700; src: url('../letterwinter.github.io/font/SummerLemonade-Script.woff') format('woff'); }
 
 * { margin:0; padding:0; }
 body { background:#000; color: #fff;font-family:'SansOne';font-size: 100%; }
