@@ -49,7 +49,7 @@ i.fa { animation: leftToRight 1s infinite;-webkit-animation: leftToRight 1s infi
 
 @media (min-width: 800px) {
   .left { width:70%;}
-  .content { margin: 10px; }
+  .content { margin: 100px; }
   .right { width:70%;left:30%; }
   h1 { font-size: 2rem;margin-top: 2rem;}
   p { font-size: 1rem;line-height: 1.5rem; }
