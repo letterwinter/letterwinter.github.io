@@ -101,6 +101,11 @@ ul.navbar-nav li.active a,ul.navbar-nav li:hover a { font-weight: 900; }
 .properties h5 { color:#fff; }
 .properties .prop-item:hover { background:#3196ae;transition: all ease-in-out .2s; }
 .properties .prop-item:hover h5 { color: #000; }
+.prop-item-img { display: inline-block;width:50px;height: 50px; }
+.prop-item-img.img1 { background: url(img/p1.png) center center no-repeat;background-size: contain; }
+.prop-item-img.img2 { background: url(img/p2.png) center center no-repeat;background-size: contain; }
+.prop-item-img.img3 { background: url(img/p3.png) center center no-repeat;background-size: contain; }
+.prop-item-img.img4 { background: url(img/p4.png) center center no-repeat;background-size: contain; }
 
 #compare {  }
 #compare h2 { padding: 10px;position: relative;display: block;margin:85px auto; }
@@ -119,6 +124,11 @@ ul.navbar-nav li.active a,ul.navbar-nav li:hover a { font-weight: 900; }
 #application h2 { padding-bottom: 10px;position: relative;margin:85px auto; }
 .app-item h4 { margin: 25px auto; }
 .app-item p { padding:0 2rem; }
+.app-item-img { display: inline-block;width:50px;height: 50px; }
+.app-item-img.img1 { background: url(img/a1.png) center center no-repeat;background-size: contain; }
+.app-item-img.img2 { background: url(img/a2.png) center center no-repeat;background-size: contain; }
+.app-item-img.img3 { background: url(img/a3.png) center center no-repeat;background-size: contain;width: 70px; }
+.app-item-img.img4 { background: url(img/a4.png) center center no-repeat;background-size: contain;width: 130px; }
 
 #roadmap { margin-bottom:100px; }
 #roadmap h2 { padding-bottom: 10px;position: relative;margin:85px auto; }
@@ -177,6 +187,7 @@ ul.navbar-nav li.active a,ul.navbar-nav li:hover a { font-weight: 900; }
 	.top-logo { height: 110px;margin-top: 40px; }
 	ul.navbar-nav { margin: 10px auto; }
 	#about a { font-size: 11px;padding: .5rem; }
+	#about p { margin: 12px 0; }
 	.properties .prop-item { padding: 35px 40px; }
 	.compare-item li:not(:nth-child(1)) { padding-left: 2rem; }
 	.app-item p { padding: 0 1rem; }
@@ -188,6 +199,8 @@ ul.navbar-nav li.active a,ul.navbar-nav li:hover a { font-weight: 900; }
 	.partner img { width: 55%; }
 	#contact .circle { width: 40px;height: 40px;line-height: 40px; }
 	#contact button[type="submit"] { margin-left:-20%; }
+	.prop-item h5 { font-size: 18px; }
+	.prop-item-img { display: inline-block;width:40px;height: 40px; }
 }
 
 @media screen and (max-width: 700px) {
