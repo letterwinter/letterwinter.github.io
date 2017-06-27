@@ -175,7 +175,7 @@
               <span style="width:10px;height:10px;background:#3b3b3c;border-radius:50%;position:absolute;bottom:0;right:0;z-index:1;"></span>
             </h2>
           </div>
-          <p class="">
+          <p class="text-justify">
             KyberNetwork is a new system which allows the exchange and conversion of digital assets. <br>
             We provide rich payment APIs and a new contract wallet that allow anyone to seamlessly receive payments from any token. <br>
             Users can also mitigate the risks of price fluctuations in the cryptocurrency world with our derivative trading.
@@ -652,38 +652,7 @@
   <script src="js/smooth-scroll.min.js"></script>
   <script src="js/index.js"></script>
   <script type="text/javascript">
-  function update() {
-    var wB = $('.plan-bar').width();
-    var wA = 0;
-
-    var today = new Date(); //alert(today);
-    var dd = today.getDate();
-    var mm = today.getMonth()+1;
-    var yyyy = today.getFullYear();
-    var d = Math.round((Date.parse(mm + " "+ dd + ", " + yyyy))/(1000*60*60*24));//alert(d);
-
-    var hours = new Date().getHours();
-    //var total_d = 50;
-    //pos_rad = ((d)*24 + hours) / ((total_d)*24.00);
-    var start_d = Math.round((Date.parse("March 22, 2017"))/(1000*60*60*24));
-    var end_d = Math.round((Date.parse("March 25, 2018"))/(1000*60*60*24));
-    var total_d = end_d - start_d;
-    pos_rad = ((d - start_d)*24 + hours) / ((total_d)*24.00);
-
-    xCoord = (wA) + wB*pos_rad;
-    $(".gradient").css({ "width": xCoord });
-    setTimeout(function(){ update(); }, 1000);
-  }
-  $(function(){
-    // var today=new Date();
-    // var dd = today.getDate();
-    // var mm = today.getMonth()+1;
-    // var yyyy = today.getFullYear();
-    // if ( dd==14 && mm==8 && yyyy=2017) { //time to start gradient
-  	//   update();
-    // }
-    update();
-  });
+  
   </script>
 </body>
 </html>
