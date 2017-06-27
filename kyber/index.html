@@ -17,7 +17,7 @@
   <!-- Theme CSS -->
   <link rel="stylesheet" href="css/animate.min.css">
   <link rel="stylesheet" href="style.css">
-
+  <link href="css/sequence-theme.modern-slide-in.css" rel="stylesheet" media="all">
 </head>
 <body>
   <header id="home">
@@ -33,10 +33,10 @@
         <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
         <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
       </div>
-      <img src="img/home_icon.png" alt="" class="top-logo mx-auto d-block">
+      <img src="img/home_icon.png" alt="" class="top-logo mx-auto d-block wow animated fadeIn" data-wow-delay="500ms">
     </div>
     </div>
-    <nav class="navbar navbar-toggleable-md">
+    <nav class="navbar navbar-toggleable-md navbar-light">
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleCenteredNav" aria-controls="navbarsExampleCenteredNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -147,7 +147,7 @@
   </header>
 
   <section id="banner">
-    <div class="container">
+    <!-- <div class="container">
       <div class="row">
         <div class="col-md-12 top-slider padding-0 text-left">
           <h5 class="blue">The next generation of on change</h5>
@@ -160,13 +160,66 @@
           <a href="#" class="text-uppercase kyber-btn white">architecture</a>
         </div>
       </div>
+    </div> -->
+    <div id="sequence" class="seq">
+      <div class="seq-screen">
+        <ul class="seq-canvas">
+          <li class="seq-in item-1">
+            <div class="seq-title text-center">
+              <div data-seq class="container">
+                <div class="row">
+                  <div class="col-md-6 offset-md-4 top-slider padding-0 text-left">
+                    <h5 class="blue">The next generation of on change</h5>
+                    <h1 class="blue font-900">EXCHANGE <br> &amp; PAYMENT SEVICE</h1>
+                    <ul class="blue font-300">
+                      <li>Instantly exchange and convert your tokens</li>
+                      <li>High liquidity, no waiting time </li>
+                      <li>Blockchain-level security, no deposit is required </li>
+                    </ul>
+                    <a href="#" class="text-uppercase kyber-btn white">architecture</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="seq-model">
+              <img data-seq src="img/banner1.png" alt="" />
+            </div>
+          </li>
+
+          <li class="item-2">
+            <div class="seq-title text-center">
+              <div data-seq class="container">
+                <div class="row">
+                  <div class="col-md-6 offset-md-4 top-slider padding-0 text-left">
+                    <h5 class="blue">The next generation of on change</h5>
+                    <h1 class="blue font-900">EXCHANGE <br> &amp; PAYMENT SEVICE</h1>
+                    <ul class="blue font-300">
+                      <li>Instantly exchange and convert your tokens</li>
+                      <li>High liquidity, no waiting time </li>
+                      <li>Blockchain-level security, no deposit is required </li>
+                    </ul>
+                    <a href="#" class="text-uppercase kyber-btn white">architecture</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="seq-model">
+              <img data-seq src="img/banner2.png" alt="" />
+            </div>
+          </li>
+        </ul>
+      </div>
+      <fieldset class="seq-nav" aria-controls="sequence" aria-label="Slider buttons">
+        <button type="button" class="seq-prev" aria-label="Previous">Previous</button>
+        <button type="button" class="seq-next" aria-label="Next">Next</button>
+      </fieldset>
     </div>
   </section>
 
   <section id="about">
     <div class="container-fluid">
       <div class="row">
-        <div class="col-md-3 offset-md-3">
+        <div class="col-md-3 offset-md-3 wow animated fadeInLeft" data-wow-delay="500ms">
           <div class="col-md-12 text-center">
             <h2 class="text-uppercase blue font-900">
               about kyber Network
@@ -184,15 +237,15 @@
           <a href="#" class="text-uppercase kyber-btn white">white paper</a>
           <a href="#" class="text-uppercase kyber-btn white">white paper</a>
         </div>
-        <div class="col-md-3 video">
+        <div class="col-md-3 video wow animated fadeInRight" data-wow-delay="500ms">
           <img src="img/faq.jpg" alt="">
         </div>
         <div class="col-md-12 text-center">
-          <h4 class="text-uppercase font-900 blue">properties</h4>
+          <h4 class="text-uppercase font-900 blue wow animated fadeInUp" data-wow-delay="500ms">properties</h4>
         </div>
         <div class="col-md-10 offset-md-1">
           <div class="row properties">
-            <div class="col-md-3 text-center prop-item">
+            <div class="col-md-3 col-xs-12 text-center prop-item wow animated fadeInLeft" data-wow-delay="500ms">
               <span class="prop-item-img img1"></span>
               <div class="text-center">
                 <h5 class="text-capitalize font-900">Trustless &amp; Secure</h5>
@@ -201,7 +254,7 @@
                 <p>Every operation happens on the smart contract. No trust is required. We never hold users' funds.</p>
               </div>
             </div>
-            <div class="col-md-3 text-center prop-item">
+            <div class="col-md-3 text-center prop-item wow animated fadeInUp" data-wow-delay="500ms">
               <span class="prop-item-img img2"></span>
               <div class="text-center">
                 <h5 class="text-capitalize font-900">high quality</h5>
@@ -210,7 +263,7 @@
                 <p>We maintain a reserve of all tokens to provide high liquidity. Get your tokens instantly when you trade.</p>
               </div>
             </div>
-            <div class="col-md-3 text-center prop-item">
+            <div class="col-md-3 text-center prop-item wow animated fadeInDown" data-wow-delay="500ms">
               <span class="prop-item-img img3"></span>
               <div class="text-center">
                 <h5 class="text-capitalize font-900">instant trade</h5>
@@ -219,7 +272,7 @@
                 <p>No waiting for confirmations, no deposit required. Instantly get ur tokens once ur token is included in the blockchain!</p>
               </div>
             </div>
-            <div class="col-md-3 text-center prop-item">
+            <div class="col-md-3 text-center prop-item wow animated fadeInRight" data-wow-delay="500ms">
               <span class="prop-item-img img4"></span>
               <div class="text-center">
                 <h5 class="text-capitalize font-900">compatibility</h5>
@@ -341,7 +394,7 @@
   </section>
 
   <section id="application">
-    <h2 class="text-uppercase blue font-900 col-md-4 offset-md-4 text-center">
+    <h2 class="text-uppercase blue font-900 col-md-4 offset-md-4 text-center wow animated fadeInUp" data-wow-delay="500ms">
       applications
       <span style="width:calc(100% - 5px);border-top:1px solid #3196ae;position:absolute;bottom:4px;left:calc(1%);z-index:0;"></span>
       <span style="width:10px;height:10px;background:#3b3b3c;border-radius:50%;position:absolute;bottom:0;left:0;z-index:1;"></span>
@@ -351,22 +404,22 @@
       <div class="row">
         <div class="col-md-10 offset-md-1">
           <div class="row">
-            <div class="col-md-3 app-item text-center">
+            <div class="col-md-3 app-item text-center wow animated fadeInLeft" data-wow-delay="500ms">
               <span class="app-item-img img1"></span>
               <h4 class="text-capitalize font-900 blue">exchange</h4>
               <p>Convert and exchange your tokens securely, instantly.</p>
             </div>
-            <div class="col-md-3 app-item text-center">
+            <div class="col-md-3 app-item text-center wow animated fadeInUp" data-wow-delay="500ms">
               <span class="app-item-img img2"></span>
               <h4 class="text-capitalize font-900 blue">proxy payments</h4>
               <p>Pay to anyone in any token from your own token. We'll do the conversion and forward the payment instantly.</p>
             </div>
-            <div class="col-md-3 app-item text-center">
+            <div class="col-md-3 app-item text-center wow animated fadeInDown" data-wow-delay="500ms">
               <span class="app-item-img img3"></span>
               <h4 class="text-capitalize font-900 blue">derivatives</h4>
               <p>Get your dividends from a DAO soon and worry about the price fluctuation? Hedge with us.</p>
             </div>
-            <div class="col-md-3 app-item text-center">
+            <div class="col-md-3 app-item text-center wow animated fadeInRight" data-wow-delay="500ms">
               <span class="app-item-img img4"></span>
               <h4 class="text-capitalize font-900 blue">cross-chain payments</h4>
               <p>We allow you to receive payments from Bitcoin and other cryptocurrencies in Ether.</p>
@@ -378,7 +431,7 @@
   </section>
 
   <section id="roadmap">
-    <h2 class="text-uppercase blue font-900 col-md-2 offset-md-5 text-center">
+    <h2 class="text-uppercase blue font-900 col-md-2 offset-md-5 text-center wow animated fadeInUp" data-wow-delay="500ms">
       roadmap
       <span style="width:calc(100% - 5px);border-top:1px solid #3196ae;position:absolute;bottom:4px;left:calc(1%);z-index:0;"></span>
       <span style="width:10px;height:10px;background:#3b3b3c;border-radius:50%;position:absolute;bottom:0;left:0;z-index:1;"></span>
@@ -428,10 +481,16 @@
     </h2>
     <div class="container-fluid">
       <di class="row">
-        <div class="col-md-10 offset-md-1">
+        <div class="col-md-10 offset-md-1 wow animated fadeInUp" data-wow-delay="500ms">
           <div class="row">
             <div class="col-md-3 member text-center">
               <img class="mx-auto d-block" src="img/LoiLuu.png" alt="">
+              <p class="social">
+                <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+              </p>
               <h6 class="text-capitalize font-900">Loi Luu</h6>
               <h6 class="text-capitalize grey">c.e.0 &amp; founder</h6>
               <p>
@@ -442,6 +501,12 @@
             </div>
             <div class="col-md-3 member text-center">
               <img class="mx-auto d-block" src="img/Yaron.png" alt="">
+              <p class="social">
+                <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+              </p>
               <h6 class="text-capitalize font-900">Loi Luu</h6>
               <h6 class="text-capitalize grey">c.e.0 &amp; founder</h6>
               <p>
@@ -452,6 +517,12 @@
             </div>
             <div class="col-md-3 member text-center">
               <img class="mx-auto d-block" src="img/victor.png" alt="">
+              <p class="social">
+                <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+              </p>
               <h6 class="text-capitalize font-900">Loi Luu</h6>
               <h6 class="text-capitalize grey">c.e.0 &amp; founder</h6>
               <p>
@@ -462,6 +533,18 @@
             </div>
             <div class="col-md-3 member text-center">
               <img class="mx-auto d-block" src="img/cuong.png" alt="">
+              <p class="social">
+                <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+              </p>
+              <p class="social">
+                <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+              </p>
               <h6 class="text-capitalize font-900">Loi Luu</h6>
               <h6 class="text-capitalize grey">c.e.0 &amp; founder</h6>
               <p>
@@ -472,6 +555,18 @@
             </div>
             <div class="col-md-3 member text-center">
               <img class="mx-auto d-block" src="img/wong-lee-hong.jpg" alt="">
+              <p class="social">
+                <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+              </p>
+              <p class="social">
+                <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+              </p>
               <h6 class="text-capitalize font-900">Loi Luu</h6>
               <h6 class="text-capitalize grey">c.e.0 &amp; founder</h6>
               <p>
@@ -482,6 +577,12 @@
             </div>
             <div class="col-md-3 member text-center">
               <img class="mx-auto d-block" src="img/hoe-lon.JPG" alt="">
+              <p class="social">
+                <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+              </p>
               <h6 class="text-capitalize font-900">Loi Luu</h6>
               <h6 class="text-capitalize grey">c.e.0 &amp; founder</h6>
               <p>
@@ -492,6 +593,12 @@
             </div>
             <div class="col-md-3 member text-center">
               <img class="mx-auto d-block" src="img/vitalik-buterin.jpg" alt="">
+              <p class="social">
+                <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+              </p>
               <h6 class="text-capitalize font-900">Loi Luu</h6>
               <h6 class="text-capitalize grey">c.e.0 &amp; founder</h6>
               <p>
@@ -502,6 +609,12 @@
             </div>
             <div class="col-md-3 member text-center">
               <img class="mx-auto d-block" src="img/prateek.jpg" alt="">
+              <p class="social">
+                <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+              </p>
               <h6 class="text-capitalize font-900">Loi Luu</h6>
               <h6 class="text-capitalize grey">c.e.0 &amp; founder</h6>
               <p>
@@ -518,7 +631,7 @@
   </section>
 
   <section id="faqs">
-    <h2 class="text-uppercase blue font-900 col-md-4 offset-md-4 text-center">
+    <h2 class="text-uppercase blue font-900 col-md-4 offset-md-4 text-center wow animated fadeInUp" data-wow-delay="500ms">
       frequently asked question
       <span style="width:calc(100% - 5px);border-top:1px solid #3196ae;position:absolute;bottom:4px;left:calc(1%);z-index:0;"></span>
       <span style="width:10px;height:10px;background:#3b3b3c;border-radius:50%;position:absolute;bottom:0;left:0;z-index:1;"></span>
@@ -527,14 +640,14 @@
 
     <div class="container">
       <div class="row">
-        <div class="col-md-6 question-list">
+        <div class="col-md-6 question-list wow animated fadeInLeft" data-wow-delay="500ms">
           <p><a href=""><span class="fs1" aria-hidden="true" data-icon="P"></span>&nbsp; What kind of financial advice do you give?</a></p>
           <p><a href=""><span class="fs1" aria-hidden="true" data-icon="P"></span>&nbsp; What kind of financial advice do you give?</a></p>
           <p><a href=""><span class="fs1" aria-hidden="true" data-icon="P"></span>&nbsp; What kind of financial advice do you give?</a></p>
           <p><a href=""><span class="fs1" aria-hidden="true" data-icon="P"></span>&nbsp; What kind of financial advice do you give?</a></p>
           <p><a href=""><span class="fs1" aria-hidden="true" data-icon="P"></span>&nbsp; What kind of financial advice do you give?</a></p>
         </div>
-        <div class="col-md-6">
+        <div class="col-md-6 wow animated fadeInRight" data-wow-delay="500ms">
           <img src="img/faq.jpg" alt="" class="img-fluid">
         </div>
       </div>
@@ -542,7 +655,7 @@
   </section>
 
   <section id="testimonial">
-    <h2 class="text-uppercase blue font-900 col-md-2 offset-md-5 text-center">
+    <h2 class="text-uppercase blue font-900 col-md-2 offset-md-5 text-center wow animated fadeInUp" data-wow-delay="500ms">
       our new
       <span style="width:calc(100% - 5px);border-top:1px solid #3196ae;position:absolute;bottom:4px;left:calc(1%);z-index:0;"></span>
       <span style="width:10px;height:10px;background:#3b3b3c;border-radius:50%;position:absolute;bottom:0;left:0;z-index:1;"></span>
@@ -550,7 +663,7 @@
     </h2>
     <div class="container">
       <div class="row">
-        <div class="col-md-4">
+        <div class="col-md-4 wow animated fadeInUp" data-wow-delay="500ms">
           <div class="card">
             <img class="card-img-top" src="img/it.jpg" alt="Card image cap">
             <div class="card-block">
@@ -560,7 +673,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4 wow animated fadeInUp" data-wow-delay="700ms">
           <div class="card">
             <img class="card-img-top" src="img/it.jpg" alt="Card image cap">
             <div class="card-block">
@@ -570,7 +683,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4 wow animated fadeInUp" data-wow-delay="900ms">
           <div class="card">
             <img class="card-img-top" src="img/it.jpg" alt="Card image cap">
             <div class="card-block">
@@ -659,8 +772,9 @@
   <script src="js/wow.min.js"></script>
   <script src="js/smooth-scroll.min.js"></script>
   <script src="js/index.js"></script>
-  <script type="text/javascript">
-
-  </script>
+  <script src="js/imagesloaded.pkgd.min.js"></script>
+  <script src="js/hammer.min.js"></script>
+  <script src="js/sequence.js"></script>
+  <script src="js/sequence-theme.modern-slide-in.js"></script>
 </body>
 </html>
