@@ -229,7 +229,9 @@ ul.seq-canvas li.item-2 { background: url(img/w2.jpg) 50% 50% no-repeat;backgrou
 }
 
 @media screen and (max-width: 640px) {
+	.topbar { display: none; }
 	.seq-title .container .row .top-slider.padding-0 { margin: 1rem; }
+	.seq-title .container .row h1 { font-size: 1.5rem; }
 	.seq .seq-model img { display: none !important; }
 	.compare-item li:not(:nth-child(1)) { padding-left: 8rem; }
 	.plan-bar { transform: rotate(90deg);margin: 90px 50px; }
@@ -237,4 +239,8 @@ ul.seq-canvas li.item-2 { background: url(img/w2.jpg) 50% 50% no-repeat;backgrou
 	.step h6 { transform: rotate(-90deg);margin: 15px; }
 	.step img { margin: 30px 0; }
 	.step4 { right: calc(5% + 0px); }
+	.prop-item h5 { font-size: 12px; }
+}
+@media screen and (max-width: 550px) {
+	.step4 { right: calc(5% + -15px); }
 }
