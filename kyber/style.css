@@ -243,4 +243,5 @@ ul.seq-canvas li.item-2 { background: url(img/w2.jpg) 50% 50% no-repeat;backgrou
 }
 @media screen and (max-width: 550px) {
 	.step4 { right: calc(5% + -15px); }
+	.compare-item li:not(:nth-child(1)) { padding-left: 7rem; }
 }
