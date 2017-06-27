@@ -642,42 +642,48 @@
   </footer>
 
 
+  <!-- Bootstrap Core JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
 
-    <!-- Bootstrap Core JavaScript -->
-    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+  <!-- Custom JavaScript -->
+  <script src="js/wow.min.js"></script>
+  <script src="js/smooth-scroll.min.js"></script>
+  <script src="js/index.js"></script>
+  <script type="text/javascript">
+  function update() {
+    var wB = $('.plan-bar').width();
+    var wA = 0;
 
-    <!-- Custom JavaScript -->
-    <script src="js/wow.min.js"></script>
-    <script src="js/smooth-scroll.min.js"></script>
-    <script src="js/index.js"></script>
-    <script type="text/javascript">
-    function update() {
-      var wB = $('.plan-bar').width();
-      var wA = 0;
+    var today = new Date(); //alert(today);
+    var dd = today.getDate();
+    var mm = today.getMonth()+1;
+    var yyyy = today.getFullYear();
+    var d = Math.round((Date.parse(mm + " "+ dd + ", " + yyyy))/(1000*60*60*24));//alert(d);
 
-      var today = new Date();
-      var hours = new Date().getHours();
+    var hours = new Date().getHours();
+    //var total_d = 50;
+    //pos_rad = ((d)*24 + hours) / ((total_d)*24.00);
+    var start_d = Math.round((Date.parse("March 22, 2017"))/(1000*60*60*24));
+    var end_d = Math.round((Date.parse("March 25, 2018"))/(1000*60*60*24));
+    var total_d = end_d - start_d;
+    pos_rad = ((d - start_d)*24 + hours) / ((total_d)*24.00);
 
-      var d = parseInt(today.getDate());
-      var total_d = 50;
-      pos_rad = ((d)*24 + hours) / ((total_d)*24.00);
-
-      xCoord = (wA) + wB*pos_rad;
-      $(".gradient").css({ "width": xCoord });
-      setTimeout(function(){ update(); }, 1000);
-    }
-    $(function(){
-      // var today=new Date();
-      // var dd = today.getDate();
-      // var mm = today.getMonth()+1;
-      // var yyyy = today.getFullYear();
-      // if ( dd==14 && mm==8 && yyyy=2017) { //time to start gradient
-    	//   update();
-      // }
-      update();
-    });
-    </script>
-  </body>
-  </html>
+    xCoord = (wA) + wB*pos_rad;
+    $(".gradient").css({ "width": xCoord });
+    setTimeout(function(){ update(); }, 1000);
+  }
+  $(function(){
+    // var today=new Date();
+    // var dd = today.getDate();
+    // var mm = today.getMonth()+1;
+    // var yyyy = today.getFullYear();
+    // if ( dd==14 && mm==8 && yyyy=2017) { //time to start gradient
+  	//   update();
+    // }
+    update();
+  });
+  </script>
+</body>
+</html>
