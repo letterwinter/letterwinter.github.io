@@ -87,6 +87,9 @@ ul.navbar-nav li { margin:0 5px;position: relative; }
 ul.navbar-nav li span { visibility: hidden; }
 ul.navbar-nav li:hover span, ul.navbar-nav li.active span { visibility: visible; }
 ul.navbar-nav li.active a,ul.navbar-nav li:hover a { font-weight: 900; }
+.navbar-light .navbar-toggler-icon {
+    background-image: url(img/icon_menu.png);
+}
 
 
 #banner { background: url(img/slider.jpg) center center no-repeat;background-size: cover; }
@@ -108,7 +111,7 @@ ul.seq-canvas li.item-3 { background: url(img/w1.jpg) 50% 50% no-repeat;backgrou
 .prop-item-img.img2 { background: url(img/p2.png) center center no-repeat;background-size: contain; }
 .prop-item-img.img3 { background: url(img/p3.png) center center no-repeat;background-size: contain; }
 .prop-item-img.img4 { background: url(img/p4.png) center center no-repeat;background-size: contain; }
-.video { padding: 2% 0; }
+.video { padding: 0; }
 
 #compare {  }
 #compare h2 { padding: 10px;position: relative;display: block;margin:85px auto; }
@@ -227,7 +230,7 @@ ul.seq-canvas li.item-3 { background: url(img/w1.jpg) 50% 50% no-repeat;backgrou
 }
 
 @media screen and (max-width: 900px) {
-	nav.navbar { position: fixed;top:0;z-index: 2000; }
+	nav.navbar { position: fixed;top:0;z-index: 5000; }
 	ul.navbar-nav { background: #fff;width: 90vw; }
 	.topbar { padding: 10px 20px 0 0; }
 	.top-logo { height: 80px;margin-top: 0px; }
@@ -241,9 +244,6 @@ ul.seq-canvas li.item-3 { background: url(img/w1.jpg) 50% 50% no-repeat;backgrou
 	.step h6 { font-size: .7rem; }
 	.step img { margin:15px 0; }
 	.step1 { left:calc(0% - 65px); }
-	/*.step2 { left:calc(25% - 65px); }
-	.step3 { left:calc(50% - 65px); }
-	.step4 { right: calc(5% + 40px); }*/
 	.step5 { right:calc(0% - 65px); }
 	#news { display: none; }
 }
@@ -251,20 +251,25 @@ ul.seq-canvas li.item-3 { background: url(img/w1.jpg) 50% 50% no-repeat;backgrou
 @media screen and (max-width: 640px) {
 	nav.navbar { margin-top:0; }
 	.topbar, .top-logo { display: none !important; }
+	ul.navbar-nav li { padding-left: 20px; }
 	.seq-title .container .row .top-slider.padding-0 { margin: 1rem; }
 	.seq-title .container .row h1 { font-size: 1.5rem; }
 	.seq .seq-model img { display: none !important; }
 	.compare-item li:not(:nth-child(1)) { padding-left: 8rem; }
-	.plan-bar { transform: rotate(90deg);margin: 90px 50px; }
-	.step { top: -82px; }
+	.plan-bar { transform: rotate(90deg);margin: 140px 0; }
+	.step { top: -88px; }
 	.step h6 { transform: rotate(-90deg);margin: 15px; }
-	.step img { margin: 30px 0; }
+	.step img { margin: 35px 0 60px; }
+	.step1 { left: calc(0% - 66px); }
+	.step5 { right: calc(0% - 66px); }
 	.prop-item h5 { font-size: 12px; }
 	#about a { font-size: 8px; }
+	#about { background: url(img/chambi.png) center center no-repeat; }
+	#compare ul { margin:0; }
 }
 @media screen and (max-width: 550px) {
 	.compare-item li:not(:nth-child(1)) { padding-left: 7rem; }
-	.seq.seq-active .seq-nav { display: none !important; }
+	.seq.seq-active .seq-nav { margin: 50% auto; }
 	.seq .seq-model, .seq .seq-title { top:50%;transform: translateY(-50%);}
 	.properties .prop-item { width: 100%; }
 	#roadmap { padding-bottom: 100px; }
