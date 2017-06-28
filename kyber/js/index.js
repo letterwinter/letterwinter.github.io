@@ -1,5 +1,4 @@
-smoothScroll.init();
-
+smoothScroll.init({ selectorHeader: '[data-scroll-header]' });
 function update() {
   var wB = $('.plan-bar').width();
   var wA = 0;
