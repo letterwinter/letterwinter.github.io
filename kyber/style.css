@@ -249,7 +249,8 @@ ul.seq-canvas li.item-3 { background: url(img/w1.jpg) 50% 50% no-repeat;backgrou
 }
 
 @media screen and (max-width: 640px) {
-	.topbar { display: none; }
+	nav.navbar { margin-top:0; }
+	.topbar, .top-logo { display: none !important; }
 	.seq-title .container .row .top-slider.padding-0 { margin: 1rem; }
 	.seq-title .container .row h1 { font-size: 1.5rem; }
 	.seq .seq-model img { display: none !important; }
@@ -258,14 +259,18 @@ ul.seq-canvas li.item-3 { background: url(img/w1.jpg) 50% 50% no-repeat;backgrou
 	.step { top: -82px; }
 	.step h6 { transform: rotate(-90deg);margin: 15px; }
 	.step img { margin: 30px 0; }
-	/*.step4 { right: calc(5% + 0px); }*/
 	.prop-item h5 { font-size: 12px; }
+	#about a { font-size: 8px; }
 }
 @media screen and (max-width: 550px) {
-	/*.step4 { right: calc(5% + -15px); }*/
 	.compare-item li:not(:nth-child(1)) { padding-left: 7rem; }
 	.seq.seq-active .seq-nav { display: none !important; }
 	.seq .seq-model, .seq .seq-title { top:50%;transform: translateY(-50%);}
 	.properties .prop-item { width: 100%; }
 	#roadmap { padding-bottom: 100px; }
+}
+@media screen and (max-width: 350px) {
+	.compare-item li:not(:nth-child(1)) { padding-left: 5rem; }
+	.step { top: -79px; }
+	.step h6 { font-size: .5rem; }
 }
