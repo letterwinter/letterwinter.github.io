@@ -92,11 +92,12 @@ ul.navbar-nav li.active a,ul.navbar-nav li:hover a { font-weight: 900; }
 .top-slider ul { padding-left:20px;margin:2rem 0; }
 ul.seq-canvas li.item-1{ background: url(img/w3.jpg) 50% 50% no-repeat;background-size: cover; }
 ul.seq-canvas li.item-2 { background: url(img/w2.jpg) 50% 50% no-repeat;background-size: cover; }
+ul.seq-canvas li.item-3 { background: url(img/w1.jpg) 50% 50% no-repeat;background-size: cover; }
 
-#about { margin-top: 50px; }
+#about { margin-top: 20px;padding: 50px 0;background:url(img/chambi.png) 50vw center no-repeat;background-size: cover; }
 #about h2 { padding-bottom: 10px;position: relative; }
 #about p { margin: 30px 0; }
-#about h4 { padding: 60px 0; }
+#about h4 { padding: 12px 0;margin: 80px auto; }
 .properties .prop-item { background:#71bf9b;padding: 60px 40px;border-radius: 60px;margin: 0 1%;max-width: 23%; }
 .properties h5 { color:#fff; }
 .properties .prop-item:hover { background:#3196ae;transition: all ease-in-out .2s; }
@@ -106,7 +107,7 @@ ul.seq-canvas li.item-2 { background: url(img/w2.jpg) 50% 50% no-repeat;backgrou
 .prop-item-img.img2 { background: url(img/p2.png) center center no-repeat;background-size: contain; }
 .prop-item-img.img3 { background: url(img/p3.png) center center no-repeat;background-size: contain; }
 .prop-item-img.img4 { background: url(img/p4.png) center center no-repeat;background-size: contain; }
-.video img { max-width: 100%; }
+.video { padding: 2% 0; }
 
 #compare {  }
 #compare h2 { padding: 10px;position: relative;display: block;margin:85px auto; }
@@ -131,8 +132,8 @@ ul.seq-canvas li.item-2 { background: url(img/w2.jpg) 50% 50% no-repeat;backgrou
 .app-item-img.img3 { background: url(img/a3.png) center center no-repeat;background-size: contain;width: 70px; }
 .app-item-img.img4 { background: url(img/a4.png) center center no-repeat;background-size: contain;width: 130px; }
 
-#roadmap { margin-bottom:100px; }
-#roadmap h2 { padding-bottom: 10px;position: relative;margin:85px auto; }
+#roadmap { margin:20px auto 0;padding-top: 10px;background:url(img/chambi.png) center center no-repeat;background-size: cover; }
+#roadmap h2 { padding-bottom: 10px;position: relative;margin:45px auto 85px; }
 .plan-bar { height: 10px;border-radius: 10px;position: relative;border: 1px solid #000;margin:140px 0 200px; }
 .gradient {
   height: 10px;border-radius: 10px;position: absolute;top: -1px;left:-1px;max-width: 100%;width: 0;z-index: 1;
@@ -158,22 +159,34 @@ ul.seq-canvas li.item-2 { background: url(img/w2.jpg) 50% 50% no-repeat;backgrou
 .member p.social { position: absolute;top:100px;text-align: center;width: 100%;padding:0;margin:0;visibility: hidden; }
 .member p.social a { color: #fff;margin-right: 15px; }
 .member:hover p.social { visibility: visible; }
+.read-more-state { display: none; }
+.read-more-target { opacity: 0;max-height: 0;font-size: 0;display: none; }
+.read-more-state:checked ~ .read-more-wrap .read-more-target { opacity: 1;font-size: inherit;max-height: 999em;display: inline; }
+.read-more-state ~ .member-bio .read-more-trigger:before { content: '... READ MORE';color:#188c92; }
+.read-more-state:checked ~ .member-bio .read-more-trigger:before { content: ' HIDE';color:#188c92; }
 
-#faqs { }
+
+#faqs { background:url(img/chambi.png) center 5px no-repeat;background-size: cover; }
 #faqs h2 { padding-bottom: 10px;position: relative;margin:85px auto; }
 .question-list p a { color: #000; }
 .question-list p:hover a { font-weight: 900;color: #188c92; }
 .question-list p:hover a span { color: #188c92; }
+.faq-item label:hover { font-weight: 900;color: #188c92; }
+.faq-item .read-more-state ~ .member-bio .read-more-trigger:before { content: ''; }
+.faq-item .read-more-state:checked ~ .member-bio .read-more-trigger:before { content: ''; }
+.faq-item .read-more-state:checked ~ .member-bio .read-more-trigger { font-weight: 900;color: #188c92; }
 
-#testimonial { }
-#testimonial h2:first-child { padding-bottom: 10px;position: relative;margin:85px auto; }
-#testimonial h2 { margin:55px auto; }
+#news { }
+#news h2 { margin:55px auto;padding-bottom: 10px;position: relative; }
+#news h2:first-child { margin:85px auto 45px; }
+.card { margin-top:40px; }
 .card-block a { color:#b7b7b7; }
 .card-block:hover a { color: #188c92; }
 .partner { border-top: 1px solid #b7b7b7;border-bottom: 1px solid #b7b7b7;padding:2rem 0; }
 .partner div div:last-child { margin-top:-10px; }
 .partner img { filter: grayscale(1); }
 .partner div div:hover img { filter: grayscale(0); }
+.seemore { margin: 40px auto 50px; }
 
 #contact { margin: 55px 0; }
 #contact h5 { margin-bottom: 30px; }
@@ -188,7 +201,9 @@ ul.seq-canvas li.item-2 { background: url(img/w2.jpg) 50% 50% no-repeat;backgrou
   p { font-size: 13px; }
 	.topbar { padding: 20px 90px 0 0; }
 	.top-logo { height: 110px;margin-top: 40px; }
-	ul.navbar-nav { margin: 10px auto; }
+	ul.navbar-nav { margin: 0; }
+	.seq { height: 70vh !important; }
+	.seq-title h1 { font-size: 1.7rem; }
 	#about a { font-size: 11px;padding: .5rem; }
 	#about p { margin: 12px 0; }
 	.properties .prop-item { padding: 35px 40px; }
@@ -204,6 +219,10 @@ ul.seq-canvas li.item-2 { background: url(img/w2.jpg) 50% 50% no-repeat;backgrou
 	#contact button[type="submit"] { margin-left:-20%; }
 	.prop-item h5 { font-size: 18px; }
 	.prop-item-img { display: inline-block;width:40px;height: 40px; }
+}
+
+@media screen and (max-width: 1370px) {
+	h2 { font-size: 20px;}
 }
 
 @media screen and (max-width: 900px) {
@@ -225,7 +244,7 @@ ul.seq-canvas li.item-2 { background: url(img/w2.jpg) 50% 50% no-repeat;backgrou
 	.step3 { left:calc(50% - 65px); }
 	.step4 { right: calc(5% + 40px); }
 	.step5 { right:calc(0% - 60px); }
-	#testimonial { display: none; }
+	#news { display: none; }
 }
 
 @media screen and (max-width: 640px) {
@@ -244,4 +263,8 @@ ul.seq-canvas li.item-2 { background: url(img/w2.jpg) 50% 50% no-repeat;backgrou
 @media screen and (max-width: 550px) {
 	.step4 { right: calc(5% + -15px); }
 	.compare-item li:not(:nth-child(1)) { padding-left: 7rem; }
+	.seq.seq-active .seq-nav { display: none !important; }
+	.seq .seq-model, .seq .seq-title { top:50%;transform: translateY(-50%);}
+	.properties .prop-item { width: 100%; }
+	#roadmap { padding-bottom: 100px; }
 }

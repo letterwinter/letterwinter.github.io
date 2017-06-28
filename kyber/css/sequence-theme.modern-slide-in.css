@@ -79,7 +79,7 @@
   top: 0;
   width: 100%;
   max-width: 100%;
-  margin: 0 auto;
+  margin: 15% auto;
   padding: 0;
   pointer-events: none;
   border: none;
@@ -88,17 +88,15 @@
 .seq .seq-next,
 .seq .seq-prev {
   position: absolute;
-  top: 0;
   width: 15%;
-  height: 100vh;
+  top: 0;
   border: none;
   pointer-events: auto;
   color: rgba(0,0,0,0);
-  background: rgba(0,0,0,0);
 }
 
-.seq .seq-next { right: 0;cursor: url(../img/cursor-right-1.png), auto; }
-.seq .seq-prev { left: 0;cursor: url(../img/cursor-left-1.png), auto; }
+.seq .seq-next { right: 0;background: url("../img/bt-next.png") center center no-repeat;background-size: contain; }
+.seq .seq-prev { left: 0;background: url("../img/bt-prev.png") center center no-repeat;background-size: contain; }
 
 .seq .seq-next:focus,
 .seq .seq-next:hover,
@@ -111,12 +109,6 @@
 .seq .seq-model,
 .seq .seq-title {
   position: absolute;
-}
-
-.seq .seq-title {
-  bottom: 5%;
-  margin: 0 2.5%;
-  width: 95%;
 }
 
 .seq .seq-model {
@@ -199,7 +191,7 @@
     position: relative;
     height: auto;
     height: 100%;
-    max-height: 60vh;
+    max-height: 70vh;
     min-height: 360px;
     /* Move the background radial to the left */
     background-position: 50% 100%;
