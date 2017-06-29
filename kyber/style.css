@@ -278,7 +278,7 @@ ul.seq-canvas li.item-3 { background: url(img/w1.jpg) 50% 50% no-repeat;backgrou
 	.step h6 { font-size: .5rem; }
 }
 
-@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 2)  and (min-resolution: 192dpi) {
+@media screen and (min-device-width: 800px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 2)  and (min-resolution: 192dpi) {
 	#about a { font-size: 9px; }
 	#about p { font-size: 8px; }
 	.properties .prop-item { padding: 30px 20px; }
