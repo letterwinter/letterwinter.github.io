@@ -90,7 +90,7 @@ ul.navbar-nav li.active a,ul.navbar-nav li:hover a { font-weight: 900; }
 .navbar-light .navbar-toggler-icon { background-image: url(img/icon_menu.png); }
 
 
-#banner { background: url(img/slider.jpg) center center no-repeat;background-size: cover; }
+#banner {  }
 .top-slider ul { padding-left:20px;margin:2rem 0; }
 ul.seq-canvas li.item-1{ background: url(img/w3.jpg) 50% 50% no-repeat;background-size: cover; }
 ul.seq-canvas li.item-2 { background: url(img/w2.jpg) 50% 50% no-repeat;background-size: cover; }
@@ -280,7 +280,7 @@ ul.seq-canvas li.item-3 { background: url(img/w1.jpg) 50% 50% no-repeat;backgrou
 
 @media screen and (-webkit-min-device-pixel-ratio:0) {
 	#about a { font-size: 9px; }
-	#about p { font-size: 8px; }
-	.properties .prop-item { padding: 30px 20px; }
+	#about p { font-size: 12px; }
+	.properties .prop-item { padding: 30px 20px;height: 270px; }
 	.prop-item h5 { font-size: 14px; }
 }
