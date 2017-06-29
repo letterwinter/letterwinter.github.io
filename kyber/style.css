@@ -100,7 +100,7 @@ ul.seq-canvas li.item-3 { background: url(img/w1.jpg) 50% 50% no-repeat;backgrou
 #about h2 { padding-bottom: 10px;position: relative; }
 #about p { margin: 30px 0; }
 #about h4 { padding: 12px 0;margin: 80px auto; }
-.properties .prop-item { background:#71bf9b;padding: 60px 40px;border-radius: 60px;margin: 0 1%;max-width: 23%; }
+.properties .prop-item { background:#71bf9b;padding: 60px 20px;border-radius: 60px; }
 .properties h5 { color:#fff; }
 .properties .prop-item:hover { background:#3196ae;transition: all ease-in-out .2s; }
 .properties .prop-item:hover h5 { color: #000; }
@@ -207,7 +207,7 @@ ul.seq-canvas li.item-3 { background: url(img/w1.jpg) 50% 50% no-repeat;backgrou
 	.seq { height: 70vh !important; }
 	.seq-title h1 { font-size: 1.7rem; }
 	#about a { font-size: 11px;padding: .5rem; }
-	#about p { margin: 12px 0; }
+	#about p { margin: 12px 0;font-size: 11px; }
 	.properties .prop-item { padding: 35px 40px; }
 	.compare-item li:not(:nth-child(1)) { padding-left: 2rem; }
 	.app-item p { padding: 0 1rem; }
@@ -235,7 +235,7 @@ ul.seq-canvas li.item-3 { background: url(img/w1.jpg) 50% 50% no-repeat;backgrou
 	.seq-title .container .row .top-slider.padding-0 { margin:0; }
 	.video { margin-top: 10px; }
 	#about h4 { padding: 30px 0; }
-	.properties .prop-item { width: 49%;max-width: 100%; margin: .5%; }
+	/*.properties .prop-item { width: 49%;max-width: 100%; margin: .5%; }*/
 	.compare-item li:not(:nth-child(1)) { padding-left: 15rem; }
 	#application h2 { margin: 50px auto; }
 	.step { width: 130px;top:-45px;width: 130px; }
@@ -264,6 +264,7 @@ ul.seq-canvas li.item-3 { background: url(img/w1.jpg) 50% 50% no-repeat;backgrou
 	#about a { font-size: 8px; }
 	#about { background: url(img/chambi.png) center center no-repeat; }
 	#compare ul { margin:0; }
+	.properties div { margin-top: 10px; }
 }
 @media screen and (max-width: 550px) {
 	.compare-item li:not(:nth-child(1)) { padding-left: 7rem; }
@@ -275,4 +276,10 @@ ul.seq-canvas li.item-3 { background: url(img/w1.jpg) 50% 50% no-repeat;backgrou
 @media screen and (max-width: 350px) {
 	.compare-item li:not(:nth-child(1)) { padding-left: 5rem; }
 	.step h6 { font-size: .5rem; }
+}
+
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 2)  and (min-resolution: 192dpi) {
+	#about a { font-size: 9px; }
+	#about p { font-size: 8px; }
+	.properties .prop-item { padding: 30px 20px; }
 }
