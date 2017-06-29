@@ -1,4 +1,17 @@
 smoothScroll.init({ selectorHeader: '[data-scroll-header]' });
+
+$(window).scroll(function() {
+	var scrollDistance = $(window).scrollTop();
+
+	// Assign active class to nav links while scolling
+	$('.page-section').each(function(i) {
+			if ($(this).position().top <= scrollDistance) {
+					$('.navbar-nav li.nav-item').removeClass('active');
+					$('.navbar-nav li.nav-item').eq(i).addClass('active');
+			}
+	});
+}).scroll();
+
 function update() {
   var wB = $('.plan-bar').width();
   var wA = 0;

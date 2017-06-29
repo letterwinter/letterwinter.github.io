@@ -87,9 +87,7 @@ ul.navbar-nav li { margin:0 5px;position: relative; }
 ul.navbar-nav li span { visibility: hidden; }
 ul.navbar-nav li:hover span, ul.navbar-nav li.active span { visibility: visible; }
 ul.navbar-nav li.active a,ul.navbar-nav li:hover a { font-weight: 900; }
-.navbar-light .navbar-toggler-icon {
-    background-image: url(img/icon_menu.png);
-}
+.navbar-light .navbar-toggler-icon { background-image: url(img/icon_menu.png); }
 
 
 #banner { background: url(img/slider.jpg) center center no-repeat;background-size: cover; }
