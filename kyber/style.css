@@ -74,11 +74,11 @@ button:focus,button:hover {outline: 0;}
 body, html { font-family: 'Gilroy';}
 
 header { background: url(img/topbar.png) 0 0 no-repeat; background-size: 100% auto; }
-.topbar { padding: 30px 120px 0 0; }
+.topbar { padding: 30px 120px 0 0;margin-bottom: 60px; }
 .topbar a { color: #fff;padding:0 10px; }
 select { border: 0;background: rgba(0,0,0,0);color: #fff; }
 select:focus, select:visited { outline: 0; }
-nav.navbar { margin-top:60px; }
+nav.navbar { padding-top:0; transition: all ease-in-out .3s; }
 .top-logo { height: 80px; }
 .navbar-toggleable-md .navbar-nav .nav-link { color: #3196ae; }
 ul.navbar-nav { margin: 20px auto; }
