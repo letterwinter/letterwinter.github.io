@@ -1,0 +1,37 @@
+body { background: #F78819;position: relative;width: 100vw;height: 100vh;overflow: hidden; }
+
+svg { width: 496.5px; height: 413px; position: fixed; z-index: 1000;top: 50%;left: 50%;transform: translate(-50%, -50%); }
+
+.st0 { fill: #FFF;border:1px solid #fff; }
+.rect1 { transition: all .5s ease-in-out 0s; }
+.rect2 { transition: all .5s ease-in-out .5s; }
+.rect3 { transition: all .5s ease-in-out 1s; }
+.rect4 { transition: all .5s ease-in-out 1.5s; }
+.g1:hover .rect1 { fill: #000; transform: translateY(330.4px); transition: all .5s ease-in-out 1.5s; }
+.g1:hover .rect2 { fill: #000; transform: translateY(330.4px); transition: all .5s ease-in-out 1s; }
+.g1:hover .rect3 { fill: #000; transform: translateY(330.4px); transition: all .5s ease-in-out .5s; }
+.g1:hover .rect4 { fill: #000; transform: translateY(330.4px); transition: all .5s ease-in-out 0s; }
+
+
+/*.rect1 { animation: g1-out 3s ease-in-out 1s forwards; }*/
+/*.rect2 { transition: all .5s ease-in-out .5s; }
+.rect3 { transition: all .5s ease-in-out 1s; }
+.rect4 { transition: all .5s ease-in-out 1.5s; }*/
+/*.g1:hover .rect1 { fill: #000; transform: translateY(100px); transform: translateX(100px);transition: translateY .5s ease-in-out; transition: translateX .5s ease-in-out 1s; }
+.g1:hover .rect2 { fill: #000; animation: g1 3s ease-in-out 1s forwards; }*/
+/*.g1:hover .rect3 { fill: #000; animation: g1 .5s ease-in-out .5s; }
+.g1:hover .rect4 { fill: #000; animation: g1 .5s ease-in-out 0s; }*/
+
+
+.rect1-in { fill: #000; animation: g1 3s ease-in-out 1s forwards; }
+.rect1-out { fill: #000; animation: g1-out 3s ease-in-out 1s forwards; }
+@keyframes g1 {
+  0% { transform: translate(0px, 0px); }
+  60% { transform: translate(0px, 400px); }
+  100% { transform: translate(400px, 400px); }
+}
+@keyframes g1-out {
+  0% { transform: translate(400px, 400px); }
+  60% { transform: translate(0px, 400px); }
+  100% { transform: translate(0px, 0px); }
+}
