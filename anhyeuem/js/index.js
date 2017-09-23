@@ -14,7 +14,7 @@ window.onload=function(){
     function init(){
         var FPS = 50;
         $ = new createjs.Stage('canv');
-        createjs.Touch.enable($);
+        createjs.Touch.enable($, false, true);
         $.snapToPixelEnabled = true;
         wrapper = new createjs.Container();
       $.canvas.width = window.innerWidth;
