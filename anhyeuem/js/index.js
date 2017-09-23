@@ -4,7 +4,7 @@ window.onload=function(){
 ;(function(){
     'use strict';
     var $, wrapper, word;
-    var txt = 'Anh   yêu   e m   dã    man   nhất   nhất   nhất!!!';
+    var txt = 'A n h   y ê u   e m   d ã    ma n   n h ấ t   n h ấ t   n h ấ t!!!';
     var msdn = false; //mouse down?
     var rot = true; //rotating?
     var dM = 30 / 1000; // degree / milisec
